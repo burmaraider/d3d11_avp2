@@ -8,6 +8,7 @@
 #include "globalmgr.h"
 #include "common_draw.h"
 #include "3d_ops.h"
+#include <algorithm>
 
 using namespace DirectX;
 

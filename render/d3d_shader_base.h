@@ -115,7 +115,7 @@ public:
 		ID3D11ShaderResourceView*	m_pLMPages;
 	};
 
-	XM_ALIGNED_STRUCT(16) struct VSInputPerFrame_Opt2D
+	XM_ALIGNED_STRUCT(16) VSInputPerFrame_Opt2D
 	{
 		void Init(uint32 dwScreenWidth, uint32 dwScreenHeight)
 		{
@@ -128,7 +128,7 @@ public:
 		DirectX::XMFLOAT4	m_vScreenDims;
 	};
 
-	XM_ALIGNED_STRUCT(16) struct PSInputPerFrame_Opt2D
+	XM_ALIGNED_STRUCT(16) PSInputPerFrame_Opt2D
 	{
 		void Init(float fExposure)
 		{
@@ -138,7 +138,7 @@ public:
 		float m_fExposure;
 	};
 
-	XM_ALIGNED_STRUCT(16) struct LMBlendData_VS
+	XM_ALIGNED_STRUCT(16) LMBlendData_VS
 	{
 		void Init()
 		{
@@ -167,7 +167,7 @@ public:
 		DirectX::XMFLOAT4	m_fBetweenAndBlendPercent;
 	};
 
-	XM_ALIGNED_STRUCT(16) struct LMBlendData_PS
+	XM_ALIGNED_STRUCT(16) LMBlendData_PS
 	{
 		void Init()
 		{
@@ -208,7 +208,7 @@ public:
 		DirectX::XMFLOAT4	m_vLightColorAndRadius;
 	};
 
-	XM_ALIGNED_STRUCT(16) struct VSInputPerFrame_3D
+	XM_ALIGNED_STRUCT(16) VSInputPerFrame_3D
 	{
 		void Init(VSPerFrameParams_3D* pInitStruct)
 		{
@@ -288,7 +288,7 @@ public:
 		LMBlendData_VS		m_aLMBlendData[MAX_LIGHT_ANIMS_PER_BUFF];
 	};
 
-	XM_ALIGNED_STRUCT(16) struct PSInputPerFrame_3D
+	XM_ALIGNED_STRUCT(16) PSInputPerFrame_3D
 	{
 		void Init(PSPerFrameParams_3D* pInitStruct)
 		{
@@ -376,7 +376,7 @@ public:
 		LMBlendData_PS		m_aLMBlendData[MAX_LIGHT_ANIMS_PER_BUFF];
 	};
 
-	XM_ALIGNED_STRUCT(16) struct DynamicLight_VPS
+	XM_ALIGNED_STRUCT(16) DynamicLight_VPS
 	{
 		void Init(DynamicLight* pLight, bool bBrightenBlackLights)
 		{
@@ -420,7 +420,7 @@ public:
 		DirectX::XMFLOAT4	m_vColorAndRadius;
 	};
 
-	XM_ALIGNED_STRUCT(16) struct ModelShadowLight_VPS
+	XM_ALIGNED_STRUCT(16) ModelShadowLight_VPS
 	{
 		void Init(const ModelShadowLight* pModelShadowLight)
 		{
@@ -430,7 +430,7 @@ public:
 		DirectX::XMFLOAT4	m_vPositionAndRadius;
 	};
 
-	XM_ALIGNED_STRUCT(16) struct VPSInputDynamicLights_3D
+	XM_ALIGNED_STRUCT(16) VPSInputDynamicLights_3D
 	{
 		void Init(const Array_PLTObject& aLight, const Array_ModelShadowLight& aModelShadowLight, bool bBrightenBlackLights)
 		{

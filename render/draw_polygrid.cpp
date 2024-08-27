@@ -15,9 +15,9 @@
 
 using namespace DirectX;
 
-void d3d_GetFinalPolyGridTransform(ViewParams* pParams, DirectX::XMFLOAT4X4* pTransform, DirectX::XMFLOAT4X4* pTransformNoProj, 
+static void d3d_GetFinalPolyGridTransform(ViewParams* pParams, DirectX::XMFLOAT4X4* pTransform, DirectX::XMFLOAT4X4* pTransformNoProj, 
 	DirectX::XMFLOAT4X4* pGridTransform);
-void d3d_SetBuffersAndTopology(CPolyGridData* pData);
+static void d3d_SetBuffersAndTopology(CPolyGridData* pData);
 
 static inline void GenerateNormal(char* pData, InternalPolyGridVertex* pVert, int32 nXOff1, int32 nXOff2, int32 nYOff1, int32 nYOff2,
 	float fWidth, float fHeight, float fWidthTimesHeight, float fYScale)

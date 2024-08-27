@@ -14,6 +14,7 @@
 #include "common_datamgr.h"
 #include "d3d_vertextypes.h"
 #include "common_stuff.h"
+#include "rendermodemgr.h"
 
 enum BlendState;
 class ViewParams;

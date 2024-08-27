@@ -21,7 +21,7 @@ class CRenderShader_ClearScreen : public CRenderShader_Base
 
 public:
 
-	XM_ALIGNED_STRUCT(16) struct PSInputPerObject
+	XM_ALIGNED_STRUCT(16) PSInputPerObject
 	{
 		void Init(LTRect* pRect, DirectX::XMFLOAT3* pColor)
 		{

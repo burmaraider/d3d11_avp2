@@ -5,6 +5,7 @@
 #include "rendererconsolevars.h"
 #include "d3d_mathhelpers.h"
 #include <d3d11sdklayers.h>
+#include <algorithm>
 
 CD3D_Shell g_D3DShell;
 

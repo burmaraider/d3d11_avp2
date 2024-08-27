@@ -1,6 +1,8 @@
 #ifndef __D3D_CONVAR_H__
 #define __D3D_CONVAR_H__
 
+#include <cmath>
+
 typedef void* HLTPARAM;
 
 class BaseConVar;
@@ -8,15 +10,7 @@ extern BaseConVar* g_pConVars;
 
 inline int RoundFloatToInt(float fVal)
 {
-	int nResult;
-
-	__asm
-	{
-		fld fVal
-		fistp nResult
-	}
-
-	return nResult;
+    return static_cast<int>(std::round(fVal));
 }
 
 class BaseConVar

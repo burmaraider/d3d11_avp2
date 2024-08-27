@@ -13,8 +13,8 @@
 #include "common_draw.h"
 #include "rendermodemgr.h"
 
-void d3d_SetBuffersAndTopology(CLineSystemData* pData);
-uint32 GetLineSystemVertexCount(LineSystem* pLineSystem);
+static void d3d_SetBuffersAndTopology(CLineSystemData* pData);
+static uint32 GetLineSystemVertexCount(LineSystem* pLineSystem);
 
 void CLineSystemData::Term()
 {

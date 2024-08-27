@@ -17,7 +17,7 @@ class CRenderShader_BloomBase : public CRenderShader_Base
 
 public:
 
-	XM_ALIGNED_STRUCT(16) struct PSInputPerFrame
+	XM_ALIGNED_STRUCT(16) PSInputPerFrame
 	{
 		void Init(float fThreshold, float fBaseSaturation, float fBloomSaturation, float fBaseIntensity, 
 			float fBloomIntensity)
@@ -89,7 +89,7 @@ class CRenderShader_BloomBlur : public CRenderShader_BloomBase
 
 public:
 
-	XM_ALIGNED_STRUCT(16) struct PSInputPerObject
+	XM_ALIGNED_STRUCT(16) PSInputPerObject
 	{
 		void Init(DirectX::XMFLOAT4* pSampleWeights, DirectX::XMFLOAT4* pSampleOffsets)
 		{

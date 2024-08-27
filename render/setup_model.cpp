@@ -10,6 +10,7 @@
 #include "tagnodes.h"
 #include "full_intersectline.h"
 #include "globalmgr.h"
+#include <algorithm>
 
 using namespace DirectX;
 

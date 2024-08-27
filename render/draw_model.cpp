@@ -14,6 +14,7 @@
 #include "common_draw.h"
 #include "rendermodemgr.h"
 #include "draw_light.h"
+#include <algorithm>
 
 static Array_InternalModelVertex g_aVertexData;
 static Array_UInt16 g_aIndexData;

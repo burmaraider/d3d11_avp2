@@ -45,7 +45,7 @@ public:
 		float	m_fAlphaRef;
 	};
 
-	XM_ALIGNED_STRUCT(16) struct VSInputPerObject
+	XM_ALIGNED_STRUCT(16) VSInputPerObject
 	{
 		void Init(XMFloat4x4Trinity* pTransforms, DirectX::XMFLOAT4* pDiffuseColor)
 		{
@@ -63,7 +63,7 @@ public:
 		DirectX::XMFLOAT4	m_vDiffuseColor;
 	};
 
-	XM_ALIGNED_STRUCT(16) struct VSInputPerSubObject
+	XM_ALIGNED_STRUCT(16) VSInputPerSubObject
 	{
 		void InitAll(VPSPerSubObjectParams* pParams)
 		{
@@ -83,7 +83,7 @@ public:
 		DirectX::XMFLOAT2A	m_avMode[WORLD_MODEL_TEXTURES_PER_DRAW];
 	};
 
-	XM_ALIGNED_STRUCT(16) struct PSInputPerSubObject
+	XM_ALIGNED_STRUCT(16) PSInputPerSubObject
 	{
 		void InitAll(VPSPerSubObjectParams* pParams)
 		{
@@ -192,7 +192,7 @@ class CRenderShader_SkyPortal : public CRenderShader_Base
 
 public:
 
-	XM_ALIGNED_STRUCT(16) struct VPSInputPerObject
+	XM_ALIGNED_STRUCT(16) VPSInputPerObject
 	{
 		void Init(XMFloat4x4Trinity* pTransforms, uint32 dwScreenWidth, uint32 dwScreenHeight)
 		{

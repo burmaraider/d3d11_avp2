@@ -2,7 +2,11 @@
 #define __D3D_MATH_HELPERS_H__
 
 #ifndef __DIRECT_X_MATH_H__
+#ifdef __GNUC__
+#include "DirectXMath.h"
+#else
 #include <DirectXMath.h>
+#endif
 #define __DIRECT_X_MATH_H__
 #endif
 

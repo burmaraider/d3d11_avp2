@@ -3,9 +3,9 @@
 
 #include "common_stuff.h"
 
-void rdll_FreeModeList(RMode* pModes);
-RMode* rdll_GetSupportedModes();
-void rdll_RenderDLLSetup(RenderStruct* pStruct);
+extern "C" __declspec(dllexport) void rdll_FreeModeList(RMode* pModes);
+extern "C" __declspec(dllexport) RMode* rdll_GetSupportedModes();
+extern "C" __declspec(dllexport) void rdll_RenderDLLSetup(RenderStruct* pStruct);
 
 extern HMODULE g_hModule;
 

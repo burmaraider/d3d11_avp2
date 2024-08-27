@@ -19,7 +19,7 @@ class CRenderShader_LineSystem : public CRenderShader_Base
 
 public:
 
-	XM_ALIGNED_STRUCT(16) struct VPSInputPerObject
+	XM_ALIGNED_STRUCT(16) VPSInputPerObject
 	{
 		void Init(uint32 dwMode, XMFloat4x4Trinity* pTransforms, float fObjectAlpha)
 		{

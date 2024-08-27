@@ -21,7 +21,7 @@ class CRenderShader_Sprite : public CRenderShader_Base
 
 public:
 
-	XM_ALIGNED_STRUCT(16) struct VPSInputPerObject
+	XM_ALIGNED_STRUCT(16) VPSInputPerObject
 	{
 		void Init(uint32 dwMode, DirectX::XMFLOAT3* pModeColor, DirectX::XMFLOAT4* pDiffuseColor, 
 			XMFloat4x4Trinity* pTransforms)
@@ -97,7 +97,7 @@ public:
 		uint32	m_dwTextureIndex;
 	};
 
-	XM_ALIGNED_STRUCT(16) struct Sprite_VPS
+	XM_ALIGNED_STRUCT(16) Sprite_VPS
 	{
 		void Init(VPSPerObjectParams& params)
 		{
@@ -115,7 +115,7 @@ public:
 		DirectX::XMUINT4	m_vModeAndTextureIndex;
 	};
 
-	XM_ALIGNED_STRUCT(16) struct VPSInputPerObject
+	XM_ALIGNED_STRUCT(16) VPSInputPerObject
 	{
 		void Init(XMFloat4x4Trinity* pTransforms, XMFloat4x4Trinity* pTransformsRC, VPSPerObjectParams* pParams, 
 			uint32 dwCount)

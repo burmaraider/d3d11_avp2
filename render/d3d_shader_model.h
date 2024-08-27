@@ -52,7 +52,7 @@ public:
 		float				m_afAlphaRef[MAX_MODEL_TEXTURES];
 	};
 
-	XM_ALIGNED_STRUCT(16) struct StaticLight_VPS
+	XM_ALIGNED_STRUCT(16) StaticLight_VPS
 	{
 		void Init(StaticLight* pLight)
 		{
@@ -92,7 +92,7 @@ public:
 		DirectX::XMFLOAT4	m_vDirection;
 };
 
-	XM_ALIGNED_STRUCT(16) struct VSInputPerObject
+	XM_ALIGNED_STRUCT(16) VSInputPerObject
 	{
 		void Init(VGPSPerObjectParams* pParams)
 		{
@@ -148,7 +148,7 @@ public:
 #endif
 	};
 
-	XM_ALIGNED_STRUCT(16) struct GSInputPerObject
+	XM_ALIGNED_STRUCT(16) GSInputPerObject
 	{
 		void Init(uint32 dwHiddenPartsCount, uint32* pHiddenPrimitiveIDs)
 		{
@@ -167,7 +167,7 @@ public:
 		DirectX::XMUINT4	m_vHiddenPrimitiveID[MAX_PIECES_PER_MODEL];
 	};
 
-	XM_ALIGNED_STRUCT(16) struct PSInputPerObject
+	XM_ALIGNED_STRUCT(16) PSInputPerObject
 	{
 		void Init(VGPSPerObjectParams* pParams)
 		{

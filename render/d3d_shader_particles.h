@@ -19,7 +19,7 @@ class CRenderShader_ParticleSystem : public CRenderShader_Base
 
 public:
 
-	XM_ALIGNED_STRUCT(16) struct VPSInputPerObject
+	XM_ALIGNED_STRUCT(16) VPSInputPerObject
 	{
 		void Init(uint32 dwMode, DirectX::XMFLOAT3* pModeColor, XMFloat4x4Trinity* pTransforms, 
 			DirectX::XMFLOAT4* pColorScale,DirectX::XMFLOAT3* pParticleUp, DirectX::XMFLOAT3* pParticleRight)

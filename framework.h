@@ -10,4 +10,4 @@
 #include <list>
 #include <string>
 
-#define XM_ALIGNED_STRUCT(V) __declspec(align(V))
+//#define XM_ALIGNED_STRUCT(V) __declspec(align(V))

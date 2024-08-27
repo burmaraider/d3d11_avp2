@@ -22,7 +22,7 @@ class CRenderShader_OptimizedSurface : public CRenderShader_Base
 
 public:
 
-	XM_ALIGNED_STRUCT(16) struct PSInputPerObject
+	XM_ALIGNED_STRUCT(16) PSInputPerObject
 	{	
 		void Init(DirectX::XMFLOAT3* pTransparentColor, float fSetAlpha, DirectX::XMFLOAT3* pBaseColor)
 		{
@@ -96,7 +96,7 @@ public:
 		uint32	m_dwTextureIndex;
 	};
 
-	XM_ALIGNED_STRUCT(16) struct OptimizedSurface_PS
+	XM_ALIGNED_STRUCT(16) OptimizedSurface_PS
 	{
 		void Init(PSPerObjectParams& params)
 		{
@@ -118,7 +118,7 @@ public:
 		DirectX::XMFLOAT4A	m_vBaseColorAndTextureIndex;
 	};
 
-	XM_ALIGNED_STRUCT(16) struct PSInputPerObject
+	XM_ALIGNED_STRUCT(16) PSInputPerObject
 	{
 		void InitAll(PSPerObjectParams* pParams, uint32 dwCount)
 		{

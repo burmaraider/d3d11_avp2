@@ -16,12 +16,12 @@
 
 InternalCustomDraw g_InternalCustomDraw;
 
-void d3d_SetBuffersAndTopology(CCanvasData* pData);
-void d3d_GetFinalCanvasTransform(ViewParams* pParams, DirectX::XMFLOAT4X4* pTransform, 
+static void d3d_SetBuffersAndTopology(CCanvasData* pData);
+static void d3d_GetFinalCanvasTransform(ViewParams* pParams, DirectX::XMFLOAT4X4* pTransform, 
 DirectX::XMFLOAT4X4* pTransformNoProj, DirectX::XMFLOAT4X4* pReallyCloseProj);
-void d3d_GetFinalCanvasTransform_Normal(ViewParams* pParams, DirectX::XMFLOAT4X4* pTransform, 
+static void d3d_GetFinalCanvasTransform_Normal(ViewParams* pParams, DirectX::XMFLOAT4X4* pTransform, 
 	DirectX::XMFLOAT4X4* pTransformNoProj);
-void d3d_GetFinalCanvasTransform_ReallyClose(DirectX::XMFLOAT4X4* pTransform, DirectX::XMFLOAT4X4* pReallyCloseProj);
+static void d3d_GetFinalCanvasTransform_ReallyClose(DirectX::XMFLOAT4X4* pTransform, DirectX::XMFLOAT4X4* pReallyCloseProj);
 
 void CCanvasData::Term()
 {

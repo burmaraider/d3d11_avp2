@@ -27,12 +27,23 @@ bool d3d_InitFrame(ViewParams* pParams, SceneDesc* pDesc);
 inline void d3d_SetFPState()
 {
 	uint16 wControl;
+
+	#ifdef __GNUC__
+	__asm__ volatile
+	(
+		"fnstcw %0\n\t"
+		"andw $0xFCFF, %0\n\t"
+		"fldcw %0\n\t"
+		: "=m" (wControl)
+	);
+	#else
 	_asm 
 	{
 		fstcw wControl
 		and wControl, 0xFCFF
 		fldcw wControl
 	}
+	#endif
 }
 
 #endif
